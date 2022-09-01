@@ -48,7 +48,7 @@ class TestLogin(unittest.TestCase):
         self.assertEqual(response_message, 'Email atau Password Anda Salah')
 
     def test_c_failed_login_with_empty_email_and_password(self): 
-        # steps
+        
         browser = self.browser #buka web browser
         browser.get("http://barru.pythonanywhere.com/daftar") 
         time.sleep(3)
@@ -66,7 +66,7 @@ class TestLogin(unittest.TestCase):
         self.assertIn('tidak valid', response_data)
         self.assertEqual(response_message, 'Cek kembali email anda')
 
-     def test_d_success_register(self): 
+    def test_d_success_register(self): 
         
         browser = self.browser 
         browser.get("http://barru.pythonanywhere.com/daftar") 
