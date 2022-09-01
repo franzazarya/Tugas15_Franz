@@ -49,7 +49,7 @@ class TestLogin(unittest.TestCase):
 
     def test_c_failed_login_with_empty_email_and_password(self): 
         
-        browser = self.browser #buka web browser
+        browser = self.browser
         browser.get("http://barru.pythonanywhere.com/daftar") 
         time.sleep(3)
         browser.find_element(By.XPATH,"/html/body/div/div[2]/form/input[1]").send_keys("") 
